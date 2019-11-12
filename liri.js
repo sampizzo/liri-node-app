@@ -1,10 +1,16 @@
 require("dotenv").config();
 var keys = require("./keys.js");
+var Spotify = require("node-spotify-api");//possibly don't need
 var spotify = new Spotify(keys.spotify);
+var axios = require("axios");
+var fs = require("fs");
+var moment = require("moment");
 
 // capture the command that the user puts in (process.argv[2])
+var userInput =  process.argv[2];
 
 // capture the user's search term (process.argv index 3 and later) (*use activity 18 level 2 for guidance on how to capture this!*)
+var userSearch = 
 
 // Make a switch statement for the four commands. The default case should tell the user to try again.
 
