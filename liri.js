@@ -45,12 +45,17 @@ var concertThis = function () {
 
     axios.get(URL).then(function (response) {
         console.log(response.data[0]);
-        // Display name of venue, venue location, and the date of the event 
-        // Format the date of the event to be MM/DD/YYYY (look at the moment node package documentation!)
+        // Display name of venue, venue location, and the date of the event
+
         for (var i = 0; i < 5; i++){
             console.log("Venue: " + response.data[i].venue.name);
             console.log("Location: " + response.data[i].venue.city + ", " + response.data[i].venue.country);
-            console.log("Date: " + response.data[i].datetime);
+            //console.log("Date: " + response.data[i].datetime);
+            // Format the date of the event to be MM/DD/YYYY
+            var datetime = response.data[i].datetime;
+            var date = moment(datetime, "YYYY-MM-DD HH:mm:ss").format("MM/DD/YYYY");
+            console.log("Date: " + date);
+
             // var concertData = [
             //     "Venue: " + jsonData.venue,
             // ]
