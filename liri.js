@@ -8,11 +8,11 @@ var moment = require("moment");
 
 // capture the command that the user puts in (process.argv[2])
 var userCommand = process.argv[2];
-console.log("userCommand");
+console.log(userCommand);
 
 // capture the user's search term (process.argv index 3 and later) (*use activity 18 level 2 for guidance on how to capture this!*)
 var userSearch = process.argv.slice(3).join("+");
-console.log("userSearch");
+console.log(userSearch);
 
 // Make a switch statement for the four commands. The default case should tell the user to try again.
 
@@ -40,16 +40,26 @@ function runSwitch(userCommand, userSearch) {
 // check if userCommand is "concert-this"
 // run an API call using axios to the bands-in-town API
 // inject the user's search term in the queryURL
-var concertThis = function(){
+var concertThis = function () {
     var URL = "https://rest.bandsintown.com/artists/" + userSearch + "/events?app_id=codingbootcamp";
 
-    axios.get(URL).then(function(response){
-        console.log(response);
+    axios.get(URL).then(function (response) {
+        console.log(response.data[0]);
+        // Display name of venue, venue location, and the date of the event 
+        // Format the date of the event to be MM/DD/YYYY (look at the moment node package documentation!)
+        for (var i = 0; i < 5; i++){
+            console.log("Venue: " + response.data[i].venue.name);
+            console.log("Location: " + response.data[i].venue.city + ", " + response.data[i].venue.country);
+            console.log("Date: " + response.data[i].datetime);
+            // var concertData = [
+            //     "Venue: " + jsonData.venue,
+            // ]
+        }
+        
     })
-}
+};
 
-// Display name of venue, venue location, and the date of the event 
-// Format the date of the event to be MM/DD/YYYY (look at the moment node package documentation!)
+
 
 // check if userCommand is "spotify-this-song"
 // Using Spotify Node package info and documentation, make a call to the Spotify API using the user's search term
