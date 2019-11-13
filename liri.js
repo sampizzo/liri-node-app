@@ -78,53 +78,55 @@ var concertThis = function () {
 // Using Spotify Node package info and documentation, make a call to the Spotify API using the user's search term
 var spotifyThisSong = function () {
     // Provide a default search term if the user didn't provide an argument
-        if (userSearch === "") {
-            userSearch = "Africa";
-        }
-        spotify.search({
-                    type: "track",
-                    query: userSearch,
-                    limit: 10
-                }, function (err, data) {
-                    if (err) {
-                        return console.log("Error occurred: " + err);
-                    }
-                    console.log("userSearch: " + userSearch);
-                    // Display to the user:
-                    // * Artist(s)
-                    // * The song's name
-                    // * A preview link of the song from Spotify
-                    // * The album that the song is from
-                    console.log("Artist(s): ");
-                    console.log("Song: ");
-                    console.log("Link: ");
-                    console.log("Album: ");
-                    
-                }
-        )};//end spotifyThisSong
-        
-                // check if userCommand is "movie-this"
+    if (userSearch === "") {
+        userSearch = "Africa";
+    }
+    console.log("userSearch: " + userSearch);
+    spotify
+        .search({
+            type: "track",
+            query: userSearch,
+            limit: 10
+        })
+        .then(function (response) {
+            //console.log(response.tracks.items[0]);
+            // Display to the user:
+            // * Artist(s)
+            // * The song's name
+            // * A preview link of the song from Spotify
+            // * The album that the song is from
+            console.log("Artist(s): " + response.tracks.items[0].artists[0].name);
+            console.log("Song: " + response.tracks.items[0].name);
+            console.log("Spotify Song Link: " + response.tracks.items[0].external_urls.spotify);
+            console.log("Album: " + response.tracks.items[0].album.name);
+        })
+        .catch(function (err) {
+            console.log(err);
+        });
+}; //end spotifyThisSong
 
-                // Use Axios to call the OMDB API using the user's search term. Use activities 17 and 18 as a reference!
+// check if userCommand is "movie-this"
 
-                // Display to the user:
-                // * Title of the movie.
-                // * Year the movie came out.
-                // * IMDB Rating of the movie.
-                // * Rotten Tomatoes Rating of the movie.
-                // * Country where the movie was produced.
-                // * Language of the movie.
-                // * Plot of the movie.
-                // * Actors in the movie.
+// Use Axios to call the OMDB API using the user's search term. Use activities 17 and 18 as a reference!
 
-                // Provide a default search if the user didn't provide an argument.
+// Display to the user:
+// * Title of the movie.
+// * Year the movie came out.
+// * IMDB Rating of the movie.
+// * Rotten Tomatoes Rating of the movie.
+// * Country where the movie was produced.
+// * Language of the movie.
+// * Plot of the movie.
+// * Actors in the movie.
 
-                // check if userCommand is "do-what-it-says" (DO THIS PART OF THE ASSIGNMENT ONLY IF THE OTHER THREE API CALLS WORK WELL!)
+// Provide a default search if the user didn't provide an argument.
 
-                // Use "fs" to read the random.txt file (hint, you will need to require fs! Look at activities 12 and 13)
-                // The command will be whatever is before the comma. The search term will be whatever is after the comma.
-                // Make the corresponding API call depending on what the command is.
+// check if userCommand is "do-what-it-says" (DO THIS PART OF THE ASSIGNMENT ONLY IF THE OTHER THREE API CALLS WORK WELL!)
 
-                // If the user doesn't provide 1 of the 4 recognizable commands, display message to the user to try again
+// Use "fs" to read the random.txt file (hint, you will need to require fs! Look at activities 12 and 13)
+// The command will be whatever is before the comma. The search term will be whatever is after the comma.
+// Make the corresponding API call depending on what the command is.
 
-                runSwitch(userCommand, userSearch);
+// If the user doesn't provide 1 of the 4 recognizable commands, display message to the user to try again
+
+runSwitch(userCommand, userSearch);
