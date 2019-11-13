@@ -63,9 +63,9 @@ var concertThis = function () {
                 "Date: " + date,
                 "-----------------------------------------"
             ].join("\r\n");
-            
+
             //Append concertData to log.txt, print concertData to console
-            fs.appendFile("log.txt", concertData, function(err) {
+            fs.appendFile("log.txt", concertData, function (err) {
                 if (err) throw err;
                 console.log(concertData);
             });
@@ -77,39 +77,54 @@ var concertThis = function () {
 // check if userCommand is "spotify-this-song"
 // Using Spotify Node package info and documentation, make a call to the Spotify API using the user's search term
 var spotifyThisSong = function () {
-    var URL = "";
+    // Provide a default search term if the user didn't provide an argument
+        if (userSearch === "") {
+            userSearch = "Africa";
+        }
+        spotify.search({
+                    type: "track",
+                    query: userSearch,
+                    limit: 10
+                }, function (err, data) {
+                    if (err) {
+                        return console.log("Error occurred: " + err);
+                    }
+                    console.log("userSearch: " + userSearch);
+                    // Display to the user:
+                    // * Artist(s)
+                    // * The song's name
+                    // * A preview link of the song from Spotify
+                    // * The album that the song is from
+                    console.log("Artist(s): ");
+                    console.log("Song: ");
+                    console.log("Link: ");
+                    console.log("Album: ");
+                    
+                }
+        )};//end spotifyThisSong
+        
+                // check if userCommand is "movie-this"
 
+                // Use Axios to call the OMDB API using the user's search term. Use activities 17 and 18 as a reference!
 
-// Display to the user:
-// * Artist(s)
-// * The song's name
-// * A preview link of the song from Spotify
-// * The album that the song is from
+                // Display to the user:
+                // * Title of the movie.
+                // * Year the movie came out.
+                // * IMDB Rating of the movie.
+                // * Rotten Tomatoes Rating of the movie.
+                // * Country where the movie was produced.
+                // * Language of the movie.
+                // * Plot of the movie.
+                // * Actors in the movie.
 
-// Provide a default searchTerm if the user didn't provide an argument
-}
-// check if userCommand is "movie-this"
+                // Provide a default search if the user didn't provide an argument.
 
-// Use Axios to call the OMDB API using the user's search term. Use activities 17 and 18 as a reference!
+                // check if userCommand is "do-what-it-says" (DO THIS PART OF THE ASSIGNMENT ONLY IF THE OTHER THREE API CALLS WORK WELL!)
 
-// Display to the user:
-// * Title of the movie.
-// * Year the movie came out.
-// * IMDB Rating of the movie.
-// * Rotten Tomatoes Rating of the movie.
-// * Country where the movie was produced.
-// * Language of the movie.
-// * Plot of the movie.
-// * Actors in the movie.
+                // Use "fs" to read the random.txt file (hint, you will need to require fs! Look at activities 12 and 13)
+                // The command will be whatever is before the comma. The search term will be whatever is after the comma.
+                // Make the corresponding API call depending on what the command is.
 
-// Provide a default search if the user didn't provide an argument.
+                // If the user doesn't provide 1 of the 4 recognizable commands, display message to the user to try again
 
-// check if userCommand is "do-what-it-says" (DO THIS PART OF THE ASSIGNMENT ONLY IF THE OTHER THREE API CALLS WORK WELL!)
-
-// Use "fs" to read the random.txt file (hint, you will need to require fs! Look at activities 12 and 13)
-// The command will be whatever is before the comma. The search term will be whatever is after the comma.
-// Make the corresponding API call depending on what the command is.
-
-// If the user doesn't provide 1 of the 4 recognizable commands, display message to the user to try again
-
-runSwitch(userCommand, userSearch);
+                runSwitch(userCommand, userSearch);
