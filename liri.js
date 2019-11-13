@@ -8,11 +8,11 @@ var moment = require("moment");
 
 // capture the command that the user puts in (process.argv[2])
 var userCommand = process.argv[2];
-console.log(userCommand);
+//console.log(userCommand);
 
 // capture the user's search term (process.argv index 3 and later) (*use activity 18 level 2 for guidance on how to capture this!*)
 var userSearch = process.argv.slice(3).join("+");
-console.log(userSearch);
+//console.log(userSearch);
 
 // Make a switch statement for the four commands. The default case should tell the user to try again.
 
@@ -61,8 +61,8 @@ var concertThis = function () {
                 "Venue: " + response.data[i].venue.name,
                 "Location: " + response.data[i].venue.city + ", " + response.data[i].venue.country,
                 "Date: " + date,
-                "-----------------------------------------"
-            ].join("\r\n");
+                "--------------------------------------------------------------------------\n"
+            ].join("\n");
 
             //Append concertData to log.txt, print concertData to console
             fs.appendFile("log.txt", concertData, function (err) {
@@ -95,10 +95,26 @@ var spotifyThisSong = function () {
             // * The song's name
             // * A preview link of the song from Spotify
             // * The album that the song is from
-            console.log("Artist(s): " + response.tracks.items[0].artists[0].name);
-            console.log("Song: " + response.tracks.items[0].name);
-            console.log("Spotify Song Link: " + response.tracks.items[0].external_urls.spotify);
-            console.log("Album: " + response.tracks.items[0].album.name);
+            // console.log("Artist(s): " + response.tracks.items[0].artists[0].name);
+            // console.log("Song: " + response.tracks.items[0].name);
+            // console.log("Spotify Song Link: " + response.tracks.items[0].external_urls.spotify);
+            // console.log("Album: " + response.tracks.items[0].album.name);
+
+            //Put everything in array for log.txt and console.log
+            var songData = [
+                "Artist(s): " + response.tracks.items[0].artists[0].name,
+                "Song: " + response.tracks.items[0].name,
+                "Spotify Song Link: " + response.tracks.items[0].external_urls.spotify,
+                "Album: " + response.tracks.items[0].album.name,
+                "--------------------------------------------------------------------------\n"
+            ].join("\n");
+
+            //Append songData to log.txt, print songData to console
+            fs.appendFile("log.txt", songData, function (err) {
+                if (err) throw err;
+                console.log(songData);
+            });
+
         })
         .catch(function (err) {
             console.log(err);
