@@ -44,23 +44,32 @@ var concertThis = function () {
     var URL = "https://rest.bandsintown.com/artists/" + userSearch + "/events?app_id=codingbootcamp";
 
     axios.get(URL).then(function (response) {
-        console.log(response.data[0]);
+        //console.log(response.data[0]);
         // Display name of venue, venue location, and the date of the event
 
-        for (var i = 0; i < 5; i++){
-            console.log("Venue: " + response.data[i].venue.name);
-            console.log("Location: " + response.data[i].venue.city + ", " + response.data[i].venue.country);
+        for (var i = 0; i < 5; i++) {
+            //console.log("Venue: " + response.data[i].venue.name);
+            //console.log("Location: " + response.data[i].venue.city + ", " + response.data[i].venue.country);
             //console.log("Date: " + response.data[i].datetime);
             // Format the date of the event to be MM/DD/YYYY
             var datetime = response.data[i].datetime;
             var date = moment(datetime, "YYYY-MM-DD HH:mm:ss").format("MM/DD/YYYY");
-            console.log("Date: " + date);
-
-            // var concertData = [
-            //     "Venue: " + jsonData.venue,
-            // ]
+            //console.log("Date: " + date);
+            //Put it all into an array to append to log.txt and console.log
+            var concertData = [
+                "Lineup: " + response.data[i].lineup,
+                "Venue: " + response.data[i].venue.name,
+                "Location: " + response.data[i].venue.city + ", " + response.data[i].venue.country,
+                "Date: " + date,
+                "-----------------------------------------"
+            ].join("\r\n");
+            console.log(concertData);
+            //Append concertData to log.txt
+            fs.appendFile("log.txt", concertData, function (err) {
+                if (err) throw err;
+            });
         }
-        
+
     })
 };
 
