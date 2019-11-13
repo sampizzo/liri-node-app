@@ -69,9 +69,9 @@ var concertThis = function () {
                 if (err) throw err;
                 console.log(concertData);
             });
-        }
+        };
 
-    })
+    });
 };
 
 

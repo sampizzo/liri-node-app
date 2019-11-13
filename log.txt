@@ -18,4 +18,40 @@ Date: 06/10/2020
 Venue: Innings Festival
 Location: Tempe, United States
 Date: 03/01/2020
+-----------------------------------------Lineup: Green Day
+Venue: Singapore Indoor Stadium
+Location: Singapore, 
+Date: 03/08/2020
+-----------------------------------------Lineup: Green Day
+Venue: IMPACT Arena
+Location: Bangkok, 
+Date: 03/11/2020
+-----------------------------------------Lineup: Green Day
+Venue: Mall of Asia Arena
+Location: Manila, 
+Date: 03/14/2020
+-----------------------------------------Lineup: Green Day
+Venue: Taipei Arena
+Location: Taipei, 
+Date: 03/17/2020
+-----------------------------------------Lineup: Green Day
+Venue: World Expo
+Location: Hong Kong, 
+Date: 03/20/2020
+-----------------------------------------Lineup: Flogging Molly
+Venue: Seeflughafen Nordholz
+Location: Buckeburg, Germany
+Date: 07/16/2020
+-----------------------------------------Lineup: Flogging Molly
+Venue: Püttlingen
+Location: Puttlingen, Germany
+Date: 08/06/2020
+-----------------------------------------Lineup: Flogging Molly
+Venue: rothenburg ob der tauber
+Location: Schwangau, Germany
+Date: 08/07/2020
+-----------------------------------------Lineup: Flogging Molly
+Venue: Open Flair Festival
+Location: Eschwege, Germany
+Date: 08/05/2020
 -----------------------------------------
