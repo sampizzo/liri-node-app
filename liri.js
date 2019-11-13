@@ -63,10 +63,11 @@ var concertThis = function () {
                 "Date: " + date,
                 "-----------------------------------------"
             ].join("\r\n");
-            console.log(concertData);
-            //Append concertData to log.txt
-            fs.appendFile("log.txt", concertData, function (err) {
+            
+            //Append concertData to log.txt, print concertData to console
+            fs.appendFile("log.txt", concertData, function(err) {
                 if (err) throw err;
+                console.log(concertData);
             });
         }
 
