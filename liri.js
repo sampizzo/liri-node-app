@@ -72,7 +72,7 @@ var concertThis = function () {
         };
 
     });
-};
+}; //END concertThis
 
 // check if userCommand is "spotify-this-song"
 // Using Spotify Node package info and documentation, make a call to the Spotify API using the user's search term
@@ -122,7 +122,6 @@ var spotifyThisSong = function () {
 }; //end spotifyThisSong
 
 // check if userCommand is "movie-this"
-
 // Use Axios to call the OMDB API using the user's search term. Use activities 17 and 18 as a reference!
 
 // Display to the user:
@@ -136,6 +135,40 @@ var spotifyThisSong = function () {
 // * Actors in the movie.
 
 // Provide a default search if the user didn't provide an argument.
+var movieThis = function (){
+    
+    var URL = "http://www.omdbapi.com/?t=" + userSearch + "&y=&plot=short&apikey=trilogy";
+
+    axios.get(URL).then(function (response) {
+        console.log(response.data);
+
+        // for (var i = 0; i < 5; i++) {
+        //     //console.log("Venue: " + response.data[i].venue.name);
+        //     //console.log("Location: " + response.data[i].venue.city + ", " + response.data[i].venue.country);
+        //     //console.log("Date: " + response.data[i].datetime);
+        //     // Format the date of the event to be MM/DD/YYYY
+        //     var datetime = response.data[i].datetime;
+        //     var date = moment(datetime, "YYYY-MM-DD HH:mm:ss").format("MM/DD/YYYY");
+        //     //console.log("Date: " + date);
+        //     //Put it all into an array to append to log.txt and console.log
+        //     var concertData = [
+        //         "Lineup: " + response.data[i].lineup,
+        //         "Venue: " + response.data[i].venue.name,
+        //         "Location: " + response.data[i].venue.city + ", " + response.data[i].venue.country,
+        //         "Date: " + date,
+        //         "--------------------------------------------------------------------------\n"
+        //     ].join("\n");
+
+        //     //Append concertData to log.txt, print concertData to console
+        //     fs.appendFile("log.txt", concertData, function (err) {
+        //         if (err) throw err;
+        //         console.log(concertData);
+        //     });
+        // };//END for
+
+    });
+}; //END movieThis
+
 
 // check if userCommand is "do-what-it-says" (DO THIS PART OF THE ASSIGNMENT ONLY IF THE OTHER THREE API CALLS WORK WELL!)
 
