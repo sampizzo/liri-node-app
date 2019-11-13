@@ -1,355 +1,42 @@
-Lineup: Weezer
-Venue: Corona Capital
-Location: Mexico, Mexico
-Date: 11/16/2019
------------------------------------------Lineup: Weezer,Green Day
-Venue: Rock Am Ring/Rock Im Park (June 5-7, Single Day TBA)
-Location: Nuremberg, Germany
-Date: 06/05/2020
------------------------------------------Lineup: Weezer,Green Day
-Venue: Parkbühne Wuhlheide
-Location: Berlin, Germany
-Date: 06/03/2020
------------------------------------------Lineup: Weezer,Green Day
-Venue: Ippodromo San Siro
-Location: Milan, Italy
-Date: 06/10/2020
------------------------------------------Lineup: Weezer
-Venue: Innings Festival
-Location: Tempe, United States
-Date: 03/01/2020
------------------------------------------Lineup: Green Day
-Venue: Singapore Indoor Stadium
-Location: Singapore, 
-Date: 03/08/2020
------------------------------------------Lineup: Green Day
-Venue: IMPACT Arena
-Location: Bangkok, 
-Date: 03/11/2020
------------------------------------------Lineup: Green Day
-Venue: Mall of Asia Arena
-Location: Manila, 
-Date: 03/14/2020
------------------------------------------Lineup: Green Day
-Venue: Taipei Arena
-Location: Taipei, 
-Date: 03/17/2020
------------------------------------------Lineup: Green Day
-Venue: World Expo
-Location: Hong Kong, 
-Date: 03/20/2020
------------------------------------------Lineup: Flogging Molly
-Venue: Seeflughafen Nordholz
-Location: Buckeburg, Germany
-Date: 07/16/2020
------------------------------------------Lineup: Flogging Molly
-Venue: Püttlingen
-Location: Puttlingen, Germany
-Date: 08/06/2020
------------------------------------------Lineup: Flogging Molly
-Venue: rothenburg ob der tauber
-Location: Schwangau, Germany
-Date: 08/07/2020
------------------------------------------Lineup: Flogging Molly
-Venue: Open Flair Festival
-Location: Eschwege, Germany
-Date: 08/05/2020
------------------------------------------Artist(s): Barenaked Ladies
-Song: Who Needs Sleep?
-Spotify Song Link: https://open.spotify.com/track/1UvKzaiR8r4Lxot0pVA8bh
-Album: Stunt (20th Anniversary Edition)
------------------------------------------
-
-Artist(s): Barenaked Ladies
-Song: Who Needs Sleep?
-Spotify Song Link: https://open.spotify.com/track/1UvKzaiR8r4Lxot0pVA8bh
-Album: Stunt (20th Anniversary Edition)
------------------------------------------
-
-Artist(s): Barenaked Ladies
-Song: Who Needs Sleep?
-Spotify Song Link: https://open.spotify.com/track/1UvKzaiR8r4Lxot0pVA8bh
-Album: Stunt (20th Anniversary Edition)
------------------------------------------
-Artist(s): Barenaked Ladies
-Song: Who Needs Sleep?
-Spotify Song Link: https://open.spotify.com/track/1UvKzaiR8r4Lxot0pVA8bh
-Album: Stunt (20th Anniversary Edition)
-----------------------------------------------------------------------------------
-Artist(s): Barenaked Ladies
-Song: Who Needs Sleep?
-Spotify Song Link: https://open.spotify.com/track/1UvKzaiR8r4Lxot0pVA8bh
-Album: Stunt (20th Anniversary Edition)
-----------------------------------------------------------------------------------
-Artist(s): Barenaked Ladies
-Song: Who Needs Sleep?
-Spotify Song Link: https://open.spotify.com/track/1UvKzaiR8r4Lxot0pVA8bh
-Album: Stunt (20th Anniversary Edition)
-----------------------------------------------------------------------------------
-Artist(s): Barenaked Ladies
-Song: Who Needs Sleep?
-Spotify Song Link: https://open.spotify.com/track/1UvKzaiR8r4Lxot0pVA8bh
-Album: Stunt (20th Anniversary Edition)
------------------------------------------
-Artist(s): Barenaked Ladies
-Song: Who Needs Sleep?
-Spotify Song Link: https://open.spotify.com/track/1UvKzaiR8r4Lxot0pVA8bh
-Album: Stunt (20th Anniversary Edition)
------------------------------------------
-Artist(s): Barenaked Ladies
-Song: Who Needs Sleep?
-Spotify Song Link: https://open.spotify.com/track/1UvKzaiR8r4Lxot0pVA8bh
-Album: Stunt (20th Anniversary Edition)
-------------------------------------------------------------
-Artist(s): Barenaked Ladies
-Song: Who Needs Sleep?
-Spotify Song Link: https://open.spotify.com/track/1UvKzaiR8r4Lxot0pVA8bh
-Album: Stunt (20th Anniversary Edition)
--------------------------------------------------------------------------------
-Artist(s): Barenaked Ladies
-Song: Who Needs Sleep?
-Spotify Song Link: https://open.spotify.com/track/1UvKzaiR8r4Lxot0pVA8bh
-Album: Stunt (20th Anniversary Edition)
--------------------------------------------------------------------------------
-Artist(s): Barenaked Ladies
-Song: Who Needs Sleep?
-Spotify Song Link: https://open.spotify.com/track/1UvKzaiR8r4Lxot0pVA8bh
-Album: Stunt (20th Anniversary Edition)
+Artist(s): "Weird Al" Yankovic
+Song: My Bologna
+Spotify Song Link: https://open.spotify.com/track/5aUTSJltF24eevgzM2j7gE
+Album: Stranger Things: Soundtrack from the Netflix Original Series, Season 3
 --------------------------------------------------------------------------
-Artist(s): Barenaked Ladies
-Song: Who Needs Sleep?
-Spotify Song Link: https://open.spotify.com/track/1UvKzaiR8r4Lxot0pVA8bh
-Album: Stunt (20th Anniversary Edition)
+Lineup: Social Distortion
+Venue: THE CIRCUS
+Location: Helsinki, Finland
+Date: 06/02/2020
 --------------------------------------------------------------------------
-Artist(s): Barenaked Ladies
-Song: Who Needs Sleep?
-Spotify Song Link: https://open.spotify.com/track/1UvKzaiR8r4Lxot0pVA8bh
-Album: Stunt (20th Anniversary Edition)
+Lineup: Social Distortion
+Venue: VEGA
+Location: København V, Denmark
+Date: 06/09/2020
 --------------------------------------------------------------------------
-Lineup: Weezer
-Venue: Corona Capital
-Location: Mexico, Mexico
-Date: 11/16/2019
+Lineup: Social Distortion
+Venue: Sentrum Scene
+Location: Oslo, Norway
+Date: 06/08/2020
 --------------------------------------------------------------------------
-Lineup: Weezer,Green Day
-Venue: Parkbühne Wuhlheide
-Location: Berlin, Germany
+Lineup: Social Distortion
+Venue: THE CIRCUS
+Location: Helsinki, Finland
 Date: 06/03/2020
 --------------------------------------------------------------------------
-Lineup: Weezer,Green Day
-Venue: Rock Am Ring/Rock Im Park (June 5-7, Single Day TBA)
-Location: Nuremberg, Germany
-Date: 06/05/2020
---------------------------------------------------------------------------
-Lineup: Weezer
-Venue: Innings Festival
-Location: Tempe, United States
-Date: 03/01/2020
---------------------------------------------------------------------------
-Lineup: Weezer,Green Day
-Venue: Ippodromo San Siro
-Location: Milan, Italy
+Lineup: Social Distortion,System of a Down,Billy Talent,Korn,Disturbed,The Offspring
+Venue: Nova Rock Festival
+Location: Nickelsdorf, Austria
 Date: 06/10/2020
 --------------------------------------------------------------------------
-Lineup: Green Day
-Venue: Singapore Indoor Stadium
-Location: Singapore, 
-Date: 03/08/2020
+Artist(s): TOTO
+Song: Africa
+Spotify Song Link: https://open.spotify.com/track/2374M0fQpWi3dLnB54qaLX
+Album: Toto IV
 --------------------------------------------------------------------------
-Lineup: Green Day
-Venue: IMPACT Arena
-Location: Bangkok, 
-Date: 03/11/2020
---------------------------------------------------------------------------
-Lineup: Green Day
-Venue: World Expo
-Location: Hong Kong, 
-Date: 03/20/2020
---------------------------------------------------------------------------
-Lineup: Green Day
-Venue: Taipei Arena
-Location: Taipei, 
-Date: 03/17/2020
---------------------------------------------------------------------------
-Lineup: Green Day
-Venue: Mall of Asia Arena
-Location: Manila, 
-Date: 03/14/2020
---------------------------------------------------------------------------
-Lineup: Green Day
-Venue: Singapore Indoor Stadium
-Location: Singapore, 
-Date: 03/08/2020
---------------------------------------------------------------------------
-Lineup: Green Day
-Venue: Mall of Asia Arena
-Location: Manila, 
-Date: 03/14/2020
---------------------------------------------------------------------------
-Lineup: Green Day
-Venue: Taipei Arena
-Location: Taipei, 
-Date: 03/17/2020
---------------------------------------------------------------------------
-Lineup: Green Day
-Venue: IMPACT Arena
-Location: Bangkok, 
-Date: 03/11/2020
---------------------------------------------------------------------------
-Lineup: Green Day
-Venue: World Expo
-Location: Hong Kong, 
-Date: 03/20/2020
---------------------------------------------------------------------------
-Lineup: Weezer
-Venue: Corona Capital
-Location: Mexico, Mexico
-Date: 11/16/2019
---------------------------------------------------------------------------
-Lineup: Weezer
-Venue: Innings Festival
-Location: Tempe, United States
-Date: 03/01/2020
---------------------------------------------------------------------------
-Lineup: Weezer,Green Day
-Venue: Parkbühne Wuhlheide
-Location: Berlin, Germany
-Date: 06/03/2020
---------------------------------------------------------------------------
-Lineup: Weezer,Green Day
-Venue: Ippodromo San Siro
-Location: Milan, Italy
-Date: 06/10/2020
---------------------------------------------------------------------------
-Lineup: Weezer,Green Day
-Venue: Rock Am Ring/Rock Im Park (June 5-7, Single Day TBA)
-Location: Nuremberg, Germany
-Date: 06/05/2020
---------------------------------------------------------------------------
-Lineup: Weezer
-Venue: Corona Capital
-Location: Mexico, Mexico
-Date: 11/16/2019
---------------------------------------------------------------------------
-Lineup: Weezer,Green Day
-Venue: Parkbühne Wuhlheide
-Location: Berlin, Germany
-Date: 06/03/2020
---------------------------------------------------------------------------
-Lineup: Weezer,Green Day
-Venue: Ippodromo San Siro
-Location: Milan, Italy
-Date: 06/10/2020
---------------------------------------------------------------------------
-Lineup: Weezer,Green Day
-Venue: Rock Am Ring/Rock Im Park (June 5-7, Single Day TBA)
-Location: Nuremberg, Germany
-Date: 06/05/2020
---------------------------------------------------------------------------
-Lineup: Weezer
-Venue: Innings Festival
-Location: Tempe, United States
-Date: 03/01/2020
---------------------------------------------------------------------------
---------------------------------------------------------------------------
-
-Lineup: Weezer
-Venue: Corona Capital
-Location: Mexico, Mexico
-Date: 11/16/2019--------------------------------------------------------------------------
-
-Lineup: Weezer
-Venue: Innings Festival
-Location: Tempe, United States
-Date: 03/01/2020--------------------------------------------------------------------------
-
-Lineup: Weezer,Green Day
-Venue: Parkbühne Wuhlheide
-Location: Berlin, Germany
-Date: 06/03/2020--------------------------------------------------------------------------
-
-Lineup: Weezer,Green Day
-Venue: Ippodromo San Siro
-Location: Milan, Italy
-Date: 06/10/2020--------------------------------------------------------------------------
-
-Lineup: Weezer,Green Day
-Venue: Rock Am Ring/Rock Im Park (June 5-7, Single Day TBA)
-Location: Nuremberg, Germany
-Date: 06/05/2020--------------------------------------------------------------------------
-
-Lineup: Weezer
-Venue: Corona Capital
-Location: Mexico, Mexico
-Date: 11/16/2019--------------------------------------------------------------------------
-
-Lineup: Weezer
-Venue: Innings Festival
-Location: Tempe, United States
-Date: 03/01/2020--------------------------------------------------------------------------
-
-Lineup: Weezer,Green Day
-Venue: Ippodromo San Siro
-Location: Milan, Italy
-Date: 06/10/2020--------------------------------------------------------------------------
-
-Lineup: Weezer,Green Day
-Venue: Rock Am Ring/Rock Im Park (June 5-7, Single Day TBA)
-Location: Nuremberg, Germany
-Date: 06/05/2020--------------------------------------------------------------------------
-
-Lineup: Weezer,Green Day
-Venue: Parkbühne Wuhlheide
-Location: Berlin, Germany
-Date: 06/03/2020Lineup: Weezer
-Venue: Corona Capital
-Location: Mexico, Mexico
-Date: 11/16/2019
---------------------------------------------------------------------------
-Lineup: Weezer,Green Day
-Venue: Rock Am Ring/Rock Im Park (June 5-7, Single Day TBA)
-Location: Nuremberg, Germany
-Date: 06/05/2020
---------------------------------------------------------------------------
-Lineup: Weezer,Green Day
-Venue: Parkbühne Wuhlheide
-Location: Berlin, Germany
-Date: 06/03/2020
---------------------------------------------------------------------------
-Lineup: Weezer
-Venue: Innings Festival
-Location: Tempe, United States
-Date: 03/01/2020
---------------------------------------------------------------------------
-Lineup: Weezer,Green Day
-Venue: Ippodromo San Siro
-Location: Milan, Italy
-Date: 06/10/2020
---------------------------------------------------------------------------
-Lineup: Weezer
-Venue: Corona Capital
-Location: Mexico, Mexico
-Date: 11/16/2019
---------------------------------------------------------------------------
-Lineup: Weezer,Green Day
-Venue: Parkbühne Wuhlheide
-Location: Berlin, Germany
-Date: 06/03/2020
---------------------------------------------------------------------------
-Lineup: Weezer,Green Day
-Venue: Rock Am Ring/Rock Im Park (June 5-7, Single Day TBA)
-Location: Nuremberg, Germany
-Date: 06/05/2020
---------------------------------------------------------------------------
-Lineup: Weezer,Green Day
-Venue: Ippodromo San Siro
-Location: Milan, Italy
-Date: 06/10/2020
---------------------------------------------------------------------------
-Lineup: Weezer
-Venue: Innings Festival
-Location: Tempe, United States
-Date: 03/01/2020
+Artist(s): Barenaked Ladies
+Song: Who Needs Sleep?
+Spotify Song Link: https://open.spotify.com/track/1UvKzaiR8r4Lxot0pVA8bh
+Album: Stunt (20th Anniversary Edition)
 --------------------------------------------------------------------------
 Movie Title: Ghostbusters
 Year: 1984
@@ -360,12 +47,21 @@ Language: English
 Plot: Three former parapsychology professors set up shop as a unique ghost removal service.
 Starring: Bill Murray, Dan Aykroyd, Sigourney Weaver, Harold Ramis
 --------------------------------------------------------------------------
-Movie Title: Ghostbusters
-Year: 1984
-IMDB Rating: 7.8
-Rotten Tomatoes Rating: 97%
+Movie Title: Young Frankenstein
+Year: 1974
+IMDB Rating: 8.0
+Rotten Tomatoes Rating: 93%
 Country: USA
-Language: English
-Plot: Three former parapsychology professors set up shop as a unique ghost removal service.
-Starring: Bill Murray, Dan Aykroyd, Sigourney Weaver, Harold Ramis
+Language: English, German
+Plot: An American grandson of the infamous scientist, struggling to prove that his grandfather was not as insane as people believe, is invited to Transylvania, where he discovers the process that reanimates a dead body.
+Starring: Gene Wilder, Peter Boyle, Marty Feldman, Madeline Kahn
+--------------------------------------------------------------------------
+Movie Title: Clue
+Year: 1985
+IMDB Rating: 7.3
+Rotten Tomatoes Rating: 59%
+Country: USA
+Language: English, French
+Plot: Six guests are anonymously invited to a strange mansion for dinner, but after their host is killed, they must cooperate with the staff to identify the murderer as the bodies pile up.
+Starring: Eileen Brennan, Tim Curry, Madeline Kahn, Christopher Lloyd
 --------------------------------------------------------------------------

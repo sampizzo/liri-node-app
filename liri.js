@@ -14,6 +14,21 @@ var userCommand = process.argv[2];
 var userSearch = process.argv.slice(3).join("+");
 //console.log(userSearch);
 
+var doWhatItSays = function(){
+    fs.readFile("random.txt", "utf8", function(error, data){
+        if(error){
+            return console.log(error);
+        }
+        var randomTxt = data.split(",");
+        //console.log(randomTxt[0] + ", " + randomTxt[1]);
+        userCommand = randomTxt[0];
+        userSearch = randomTxt[1];
+        //runSwitch(randomTxt[0], randomTxt[1]);
+        runSwitch(userCommand, userSearch);
+    
+    });
+};
+
 // Make a switch statement for the four commands. The default case should tell the user to try again.
 
 function runSwitch(userCommand, userSearch) {
@@ -31,7 +46,7 @@ function runSwitch(userCommand, userSearch) {
             doWhatItSays();
             break;
         default:
-            tryAgain();
+            console.log("Please enter a valid command: concert-this [band name], spotify-this-song [song title], movie-this [movie title], do-what-it-says");
     }
 }
 
@@ -41,6 +56,7 @@ function runSwitch(userCommand, userSearch) {
 // run an API call using axios to the bands-in-town API
 // inject the user's search term in the queryURL
 var concertThis = function () {
+    //console.log("concertThis userSearch: " + userSearch);
     var URL = "https://rest.bandsintown.com/artists/" + userSearch + "/events?app_id=codingbootcamp";
 
     axios.get(URL).then(function (response) {
@@ -81,7 +97,6 @@ var spotifyThisSong = function () {
     if (userSearch === "") {
         userSearch = "Africa";
     }
-    console.log("userSearch: " + userSearch);
     spotify
         .search({
             type: "track",
@@ -160,12 +175,5 @@ var movieThis = function (){
 }; //END movieThis
 
 
-// check if userCommand is "do-what-it-says" (DO THIS PART OF THE ASSIGNMENT ONLY IF THE OTHER THREE API CALLS WORK WELL!)
-
-// Use "fs" to read the random.txt file (hint, you will need to require fs! Look at activities 12 and 13)
-// The command will be whatever is before the comma. The search term will be whatever is after the comma.
-// Make the corresponding API call depending on what the command is.
-
-// If the user doesn't provide 1 of the 4 recognizable commands, display message to the user to try again
 
 runSwitch(userCommand, userSearch);
