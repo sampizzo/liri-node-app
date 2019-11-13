@@ -136,7 +136,9 @@ var spotifyThisSong = function () {
 
 // Provide a default search if the user didn't provide an argument.
 var movieThis = function (){
-    
+    if (userSearch === ""){
+        userSearch = "Ghostbusters";
+    }
     var URL = "http://www.omdbapi.com/?t=" + userSearch + "&y=&plot=short&apikey=trilogy";
 
     axios.get(URL).then(function (response) {
