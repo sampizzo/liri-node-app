@@ -121,19 +121,6 @@ var spotifyThisSong = function () {
         });
 }; //end spotifyThisSong
 
-// check if userCommand is "movie-this"
-// Use Axios to call the OMDB API using the user's search term. Use activities 17 and 18 as a reference!
-
-// Display to the user:
-// * Title of the movie.
-// * Year the movie came out.
-// * IMDB Rating of the movie.
-// * Rotten Tomatoes Rating of the movie.
-// * Country where the movie was produced.
-// * Language of the movie.
-// * Plot of the movie.
-// * Actors in the movie.
-
 // Provide a default search if the user didn't provide an argument.
 var movieThis = function (){
     if (userSearch === ""){
@@ -142,32 +129,33 @@ var movieThis = function (){
     var URL = "http://www.omdbapi.com/?t=" + userSearch + "&y=&plot=short&apikey=trilogy";
 
     axios.get(URL).then(function (response) {
-        console.log(response.data);
+        //console.log(response.data);
+        // Display to the user:
+        // * Title of the movie.
+        // * Year the movie came out.
+        // * IMDB Rating of the movie.
+        // * Rotten Tomatoes Rating of the movie.
+        // * Country where the movie was produced.
+        // * Language of the movie.
+        // * Plot of the movie.
+        // * Actors in the movie.
+        var movieData = [
+            "Movie Title: " + response.data.Title,
+            "Year: " + response.data.Year,
+            "IMDB Rating: " + response.data.imdbRating,
+            "Rotten Tomatoes Rating: " + response.data.Ratings[1].Value,
+            "Country: " + response.data.Country,
+            "Language: " + response.data.Language,
+            "Plot: " + response.data.Plot,
+            "Starring: " + response.data.Actors,
+            "--------------------------------------------------------------------------\n"
+            ].join("\n");
 
-        // for (var i = 0; i < 5; i++) {
-        //     //console.log("Venue: " + response.data[i].venue.name);
-        //     //console.log("Location: " + response.data[i].venue.city + ", " + response.data[i].venue.country);
-        //     //console.log("Date: " + response.data[i].datetime);
-        //     // Format the date of the event to be MM/DD/YYYY
-        //     var datetime = response.data[i].datetime;
-        //     var date = moment(datetime, "YYYY-MM-DD HH:mm:ss").format("MM/DD/YYYY");
-        //     //console.log("Date: " + date);
-        //     //Put it all into an array to append to log.txt and console.log
-        //     var concertData = [
-        //         "Lineup: " + response.data[i].lineup,
-        //         "Venue: " + response.data[i].venue.name,
-        //         "Location: " + response.data[i].venue.city + ", " + response.data[i].venue.country,
-        //         "Date: " + date,
-        //         "--------------------------------------------------------------------------\n"
-        //     ].join("\n");
-
-        //     //Append concertData to log.txt, print concertData to console
-        //     fs.appendFile("log.txt", concertData, function (err) {
-        //         if (err) throw err;
-        //         console.log(concertData);
-        //     });
-        // };//END for
-
+            //Append movieData to log.txt, print movieData to console
+            fs.appendFile("log.txt", movieData, function (err) {
+                if (err) throw err;
+                console.log(movieData);
+            });
     });
 }; //END movieThis
 
