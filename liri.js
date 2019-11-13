@@ -64,14 +64,17 @@ var concertThis = function () {
         // Display name of venue, venue location, and the date of the event
 
         for (var i = 0; i < 5; i++) {
-            //console.log("Venue: " + response.data[i].venue.name);
-            //console.log("Location: " + response.data[i].venue.city + ", " + response.data[i].venue.country);
+             console.log("Lineup: " + response.data[i].lineup);
+             console.log("Venue: " + response.data[i].venue.name);
+             console.log("Location: " + response.data[i].venue.city + ", " + response.data[i].venue.country);
             //console.log("Date: " + response.data[i].datetime);
             // Format the date of the event to be MM/DD/YYYY
             var datetime = response.data[i].datetime;
             var date = moment(datetime, "YYYY-MM-DD HH:mm:ss").format("MM/DD/YYYY");
-            //console.log("Date: " + date);
-            //Put it all into an array to append to log.txt and console.log
+             console.log("Date: " + date);
+             console.log("--------------------------------------------------------------------------");
+
+            //Put it all into an array to append to log.txt
             var concertData = [
                 "Lineup: " + response.data[i].lineup,
                 "Venue: " + response.data[i].venue.name,
@@ -83,7 +86,7 @@ var concertThis = function () {
             //Append concertData to log.txt, print concertData to console
             fs.appendFile("log.txt", concertData, function (err) {
                 if (err) throw err;
-                console.log(concertData);
+                //console.log(concertData);
             });
         };
 
