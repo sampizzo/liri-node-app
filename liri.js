@@ -74,10 +74,11 @@ var concertThis = function () {
     });
 };
 
-
-
 // check if userCommand is "spotify-this-song"
 // Using Spotify Node package info and documentation, make a call to the Spotify API using the user's search term
+var spotifyThisSong = function () {
+    var URL = "";
+
 
 // Display to the user:
 // * Artist(s)
@@ -86,7 +87,7 @@ var concertThis = function () {
 // * The album that the song is from
 
 // Provide a default searchTerm if the user didn't provide an argument
-
+}
 // check if userCommand is "movie-this"
 
 // Use Axios to call the OMDB API using the user's search term. Use activities 17 and 18 as a reference!
