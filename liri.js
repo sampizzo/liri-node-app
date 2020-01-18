@@ -14,9 +14,9 @@ var userCommand = process.argv[2];
 var userSearch = process.argv.slice(3).join("+");
 //console.log(userSearch);
 
-var doWhatItSays = function(){
-    fs.readFile("random.txt", "utf8", function(error, data){
-        if(error){
+var doWhatItSays = function () {
+    fs.readFile("random.txt", "utf8", function (error, data) {
+        if (error) {
             return console.log(error);
         }
         var randomTxt = data.split(",");
@@ -25,7 +25,7 @@ var doWhatItSays = function(){
         userSearch = randomTxt[1];
         //runSwitch(randomTxt[0], randomTxt[1]);
         runSwitch(userCommand, userSearch);
-    
+
     });
 };
 
@@ -57,6 +57,9 @@ function runSwitch(userCommand, userSearch) {
 // inject the user's search term in the queryURL
 var concertThis = function () {
     //console.log("concertThis userSearch: " + userSearch);
+    if (userSearch === ""){
+        console.log("Please enter a band");
+    }
     var URL = "https://rest.bandsintown.com/artists/" + userSearch + "/events?app_id=codingbootcamp";
 
     axios.get(URL).then(function (response) {
@@ -64,15 +67,15 @@ var concertThis = function () {
         // Display name of venue, venue location, and the date of the event
 
         for (var i = 0; i < 5; i++) {
-             console.log("Lineup: " + response.data[i].lineup);
-             console.log("Venue: " + response.data[i].venue.name);
-             console.log("Location: " + response.data[i].venue.city + ", " + response.data[i].venue.country);
+            console.log("Lineup: " + response.data[i].lineup);
+            console.log("Venue: " + response.data[i].venue.name);
+            console.log("Location: " + response.data[i].venue.city + ", " + response.data[i].venue.country);
             //console.log("Date: " + response.data[i].datetime);
             // Format the date of the event to be MM/DD/YYYY
             var datetime = response.data[i].datetime;
             var date = moment(datetime, "YYYY-MM-DD HH:mm:ss").format("MM/DD/YYYY");
-             console.log("Date: " + date);
-             console.log("--------------------------------------------------------------------------");
+            console.log("Date: " + date);
+            console.log("--------------------------------------------------------------------------");
 
             //Put it all into an array to append to log.txt
             var concertData = [
@@ -140,8 +143,26 @@ var spotifyThisSong = function () {
 }; //end spotifyThisSong
 
 // Provide a default search if the user didn't provide an argument.
-var movieThis = function (){
-    if (userSearch === ""){
+var movieThis = function () {
+    if (userSearch === "") {
+        console.log("                    ,▄▀▀▀");
+        console.log("                 ▄▀▀⌡   ,▓▓▌");
+        console.log("                ▓ Γ  ^  ▓▓▓▓▓▓▓█▄▄");
+        console.log("             ▄▓▓  ▀  ▀  ▓▓▓▓▓▓▓▓▓▓▓█▄ ");
+        console.log("           ▄▓▓▀    .⌐    ▓▓▓▓▓▓▓▓▓▓▓▓▓▄");
+        console.log("         ▄▓▓▓▌     ▄      ▓▀▀█▓▓▓▓▓▓▓▓▓▓");
+        console.log("        ▄▓▓▓▓▓     ▀     Æ    ╓▒▓▓▓▓▓▓▓▓▓ ");
+        console.log("       ▐▓▓▓▓▀^     ╙      ,▄▒▓▓▓▓▓▓▓▓▓▓▓▀▀▓b");
+        console.log("▀▓▀▀¥▄ ▓▓▓▀╘           ▄▒▓▓▓▓▓▓▓▓▓▀╙╙╨  ▄▓▌  ");
+        console.log(",Æ▀`  └▀▀          ,▄▓▓▓▓▓▓▓▓▓▀▀▄       `⌠▀▀▌");
+        console.log(" ▀▓╨        ,▄▓▓▄▒▓▓▓▓▓▓▓▓▓▀╙  ▐ ,═W▄▄▄▄⌠▀▄╙ ");
+        console.log("  ▀╙╘▀▀█,j▒▓▓▓▓▓▓▓▓▓▓▓▓▀╙          ▐▓▓▓▓▓▓b ");
+        console.log("       └▓▓▓▓▓▓▓▓▓▓▓▓▓╙            @▓▓▓▓▓▓▌");
+        console.log("        ▐▓▓▓▓▓▓▓▓▓▓▀  └^``      ╓▒▓▓▓▓▓▓▓");
+        console.log("         ¬▓▓▓▓▓▓▓▓▒▄µ       ,▄▒▓▓▓▓▓▓▓▓▀");
+        console.log("           ╙▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▀");
+        console.log("             └▀▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▀▀");
+        console.log("                 ╙▀▀█▓▓▓▓▓▓▓█▀▀▀┌");
         userSearch = "Ghostbusters";
     }
     var URL = "http://www.omdbapi.com/?t=" + userSearch + "&y=&plot=short&apikey=trilogy";
@@ -167,13 +188,13 @@ var movieThis = function (){
             "Plot: " + response.data.Plot,
             "Starring: " + response.data.Actors,
             "--------------------------------------------------------------------------\n"
-            ].join("\n");
+        ].join("\n");
 
-            //Append movieData to log.txt, print movieData to console
-            fs.appendFile("log.txt", movieData, function (err) {
-                if (err) throw err;
-                console.log(movieData);
-            });
+        //Append movieData to log.txt, print movieData to console
+        fs.appendFile("log.txt", movieData, function (err) {
+            if (err) throw err;
+            console.log(movieData);
+        });
     });
 }; //END movieThis
 
